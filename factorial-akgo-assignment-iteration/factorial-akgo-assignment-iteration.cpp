@@ -13,13 +13,13 @@ int main()
     auto start = chrono::high_resolution_clock::now();
    
     long long number;
-    cout << "enter the number : " << endl;
+    cout << "enter the number you want to calculate the factorial for it : " << endl;
     cin >> number;
-    long long fact = 1;
+    long long factorial = 1;
     for (int i = 2; i <= number; i++) {
-        fact = fact * i;
+        factorial = factorial * i;
     }
-    cout << "fact of " << number << ": "<<fact << endl;
+    cout << "factorial of " << number << "= "<<factorial << endl;
 
     auto end = chrono::high_resolution_clock::now();
 
